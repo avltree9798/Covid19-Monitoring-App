@@ -14,6 +14,9 @@
 		44C621C5242261B000328638 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44C621C4242261B000328638 /* Assets.xcassets */; };
 		44C621C8242261B000328638 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C621C6242261B000328638 /* LaunchScreen.storyboard */; };
 		44C621CB242261B000328638 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C621CA242261B000328638 /* main.m */; };
+		44C621D72422636000328638 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C621D62422636000328638 /* AboutViewController.m */; };
+		44C621DA2422639300328638 /* CasesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C621D92422639300328638 /* CasesViewController.m */; };
+		44FF05322422AEE0000FE569 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FF05312422AEE0000FE569 /* Database.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,13 @@
 		44C621C7242261B000328638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44C621C9242261B000328638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44C621CA242261B000328638 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		44C621D1242261EB00328638 /* Covid19 Monitoring.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Covid19 Monitoring.entitlements"; sourceTree = "<group>"; };
+		44C621D52422636000328638 /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		44C621D62422636000328638 /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		44C621D82422639300328638 /* CasesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CasesViewController.h; sourceTree = "<group>"; };
+		44C621D92422639300328638 /* CasesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CasesViewController.m; sourceTree = "<group>"; };
+		44FF05302422AEE0000FE569 /* Database.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		44FF05312422AEE0000FE569 /* Database.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +71,50 @@
 		44C621B7242261A700328638 /* Covid19 Monitoring */ = {
 			isa = PBXGroup;
 			children = (
-				44C621B8242261A700328638 /* AppDelegate.h */,
-				44C621B9242261A700328638 /* AppDelegate.m */,
+				44C621D42422623300328638 /* Nibs */,
+				44C621D32422620200328638 /* Controllers */,
+				44C621D2242261FC00328638 /* Classes */,
+				44C621D1242261EB00328638 /* Covid19 Monitoring.entitlements */,
 				44C621BB242261A700328638 /* SceneDelegate.h */,
 				44C621BC242261A700328638 /* SceneDelegate.m */,
-				44C621BE242261A700328638 /* ViewController.h */,
-				44C621BF242261A700328638 /* ViewController.m */,
-				44C621C1242261A700328638 /* Main.storyboard */,
 				44C621C4242261B000328638 /* Assets.xcassets */,
-				44C621C6242261B000328638 /* LaunchScreen.storyboard */,
 				44C621C9242261B000328638 /* Info.plist */,
 				44C621CA242261B000328638 /* main.m */,
 			);
 			path = "Covid19 Monitoring";
+			sourceTree = "<group>";
+		};
+		44C621D2242261FC00328638 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				44C621B8242261A700328638 /* AppDelegate.h */,
+				44C621B9242261A700328638 /* AppDelegate.m */,
+				44FF05302422AEE0000FE569 /* Database.h */,
+				44FF05312422AEE0000FE569 /* Database.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		44C621D32422620200328638 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				44C621BE242261A700328638 /* ViewController.h */,
+				44C621BF242261A700328638 /* ViewController.m */,
+				44C621D52422636000328638 /* AboutViewController.h */,
+				44C621D62422636000328638 /* AboutViewController.m */,
+				44C621D82422639300328638 /* CasesViewController.h */,
+				44C621D92422639300328638 /* CasesViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		44C621D42422623300328638 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				44C621C1242261A700328638 /* Main.storyboard */,
+				44C621C6242261B000328638 /* LaunchScreen.storyboard */,
+			);
+			path = Nibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +188,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				44C621C0242261A700328638 /* ViewController.m in Sources */,
+				44C621D72422636000328638 /* AboutViewController.m in Sources */,
+				44FF05322422AEE0000FE569 /* Database.m in Sources */,
 				44C621BA242261A700328638 /* AppDelegate.m in Sources */,
 				44C621CB242261B000328638 /* main.m in Sources */,
+				44C621DA2422639300328638 /* CasesViewController.m in Sources */,
 				44C621BD242261A700328638 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,15 +333,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Covid19 Monitoring/Covid19 Monitoring.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = W6RB25ZNB7;
 				INFOPLIST_FILE = "Covid19 Monitoring/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.avltree9798.Covid19-Monitoring";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -306,15 +354,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Covid19 Monitoring/Covid19 Monitoring.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = W6RB25ZNB7;
 				INFOPLIST_FILE = "Covid19 Monitoring/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.avltree9798.Covid19-Monitoring";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -14,10 +14,17 @@
 
 @implementation ViewController
 
+-(IBAction)unwindToHome:(UIStoryboardSegue *)sender{
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)exitButtonClicked:(id)sender {
+    exit(0);
+}
 
 @end
