@@ -57,7 +57,7 @@
         <scene sceneID="QJ5-Tb-ow6">
             <objects>
                 <viewController id="VML-VX-fD7" customClass="AboutViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5XS-p1-yjA">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="5XS-p1-yjA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -74,8 +74,42 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="covid" id="eL3-0Y-djD">
+                                <rect key="frame" x="69" y="74" width="275" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Made with 💚 by Anthony Viriya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQh-bH-nw4">
+                                <rect key="frame" x="84" y="689" width="245" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Live long and prosper 🖖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifR-3z-2Oc">
+                                <rect key="frame" x="110" y="718" width="193" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" id="7f8-Wo-djW">
+                                <rect key="frame" x="20" y="302" width="328" height="401"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" adjustable="YES"/>
+                                </accessibility>
+                                <mutableString key="text">Coronavirus disease 2019 (COVID-19) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The disease was first identified in 2019 in Wuhan, China, and has since spread globally, resulting in the 2019–20 coronavirus pandemic. Common symptoms include fever, cough, and shortness of breath. Muscle pain, sputum production and sore throat are less common. While the majority of cases result in mild symptoms, some progress to severe pneumonia and multi-organ failure. As of 20 March 2020, the rate of deaths per number of diagnosed cases is 4.1%; however, it ranges from 0.2% to 15% depending on age and other health problems.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7f8-Wo-djW" firstAttribute="centerX" secondItem="5XS-p1-yjA" secondAttribute="centerX" id="hAQ-li-sIG"/>
+                            <constraint firstItem="7f8-Wo-djW" firstAttribute="centerY" secondItem="5XS-p1-yjA" secondAttribute="centerY" id="w8L-8a-ipD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MXg-zN-yjC"/>
                     </view>
                     <navigationItem key="navigationItem" id="sIA-Ck-4oL"/>
@@ -83,7 +117,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qXx-xf-fGD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="UBI-0s-MeX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="904" y="138"/>
+            <point key="canvasLocation" x="901.44927536231887" y="137.27678571428569"/>
         </scene>
         <!--Cases View Controller-->
         <scene sceneID="fw5-np-Zue">
@@ -137,4 +171,7 @@
             <point key="canvasLocation" x="411.59420289855075" y="782.8125"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="covid" width="1599" height="1116"/>
+    </resources>
 </document>

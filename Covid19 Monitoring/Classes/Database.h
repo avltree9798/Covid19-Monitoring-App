@@ -11,10 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Database : NSObject
-@property  NSMutableDictionary *cc;
-@property  NSMutableDictionary *dc;
-@property  NSMutableDictionary *rc;
-@property  NSMutableArray *c;
+@property  NSMutableDictionary *databases;
+@property NSArray* dataArray;
 +(Database*) getInstance;
 @end
 
